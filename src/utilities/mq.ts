@@ -1,5 +1,5 @@
 const mq = {
-  mobile: "400pt",
+  mobile: "458pt",
   tablet: "750pt",
   pc: "975pt",
   xxl: "1100pt",

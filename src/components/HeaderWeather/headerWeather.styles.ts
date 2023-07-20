@@ -8,7 +8,7 @@ export const WeatherCont = styled.div`
   margin-left: auto;
   margin-right: 0.5em;
   justify-content: center;
-  @media (min-width: ${mq.mobile}){
+  @media (min-width: ${mq.tablet}){
     display: flex;
   }
 `;

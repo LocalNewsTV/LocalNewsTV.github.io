@@ -4,7 +4,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { TimeBox, WeatherBox, WeatherCont, WeatherIcon, WeatherIconCont, WeatherP } from './headerWeather.styles';
+import { TimeBox, WeatherBox, WeatherCont, WeatherIcon, WeatherP } from './headerWeather.styles';
 
 export const HeaderWeather = () => {
   type WeatherObject = {
