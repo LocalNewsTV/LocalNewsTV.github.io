@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavLink } from 'react-router-dom';
-import { HeaderWeather } from "../HeaderWeather/HeaderWeather";
 import { Banner, HeaderCont, MainCont, Logo, Title, NavCont, NavItem, Hamburger, MenuImg } from "./header.styles";
 import hamburger from '/Hamburger.svg';
 import cancel from '/Cancel.svg';
@@ -46,7 +45,6 @@ const Header = () => {
           <NavURL destination="Resume" />
         </NavCont>
       </MainCont>
-      <HeaderWeather />
     </HeaderCont>
   );
 }

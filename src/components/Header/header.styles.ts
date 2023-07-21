@@ -14,9 +14,9 @@ export const HeaderCont = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 45pt;
-  width: 100%;
+  justify-content: flex-start;
+  width: 100svw;
+  min-height: 35pt;
   background-color: ${navBar};
   margin: 0;
   border-bottom: 1px solid black;
@@ -96,7 +96,6 @@ export const Banner = styled.div`
   }
 `;
 export const Title = styled.h1`
-  font-family: 'Open Sans Variable', sans-serif;
   padding: 0;
   font-size: 20pt;
   color: #16161D;
@@ -115,6 +114,7 @@ export const Hamburger = styled.button<HeaderProps>`
   transition: all 0.25s;
   background: inherit;
   margin: 0 1.5em 0 auto;
+  &:hover { cursor: pointer; }
   @media(min-width: ${mq.tablet}){
     display: none;
   }

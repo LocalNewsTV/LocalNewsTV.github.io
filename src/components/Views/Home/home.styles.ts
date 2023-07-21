@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 import mq from '../../../utilities/mq';
-import { hero, section, black } from '../../../assets/Theming';
+import { hero, section, black, accent } from '../../../assets/Theming';
 
 export const MainCont = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: content-box;
   align-items: center;
   width: 100%;
   background-color: ${section};
@@ -13,11 +14,22 @@ export const MainCont = styled.div`
 export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 20pt;
-  align-items: left;
-  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
   max-width: ${mq.tablet};
 `;
+
+export const IntroContainer = styled.div`
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  max-width: ${mq.tablet};
+`;
+
 export const SectionCont = styled.div`
   display: flex;
   justify-content: center;
@@ -26,10 +38,10 @@ export const SectionCont = styled.div`
   align-items: center;
   width: 100%;
   background-color: ${section};
-  &:first-of-type {
+  &:nth-of-type(1) {
     background-color: ${hero};
     min-height: 100dvh;
-    padding-top: 50pt;
+    padding: 50pt 5pt 0 15pt;
   }
   @media (min-width: ${mq.mobile}){
     
@@ -42,7 +54,7 @@ export const HR = styled.hr`
 `
 export const IntroP = styled.p`
   font-family: 'Open Sans Variable', sans-serif;
-  color: #CC3333;
+  color: ${accent};
   font-size: 14pt;
   margin: 0;
   padding: 0;
@@ -66,13 +78,11 @@ export const BigP = styled.p`
 `;
 
 export const SubP = styled.p`
-  font-family: 'Open Sans Variable', sans-serif;
   margin: 0;
   padding: 0;
 `;
 
 export const MiniP = styled.p`
-  font-family: 'Open Sans Variable', sans-serif;
   font-size: 10pt;
   margin: 12pt 0 0 0;
   padding: 0;
