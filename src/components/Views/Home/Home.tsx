@@ -8,6 +8,10 @@ import { ContentContainer,
   BigP,
   IntroContainer,
 } from './home.styles';
+import Projects from '../../../projects';
+import Project from '../../../types/Project';
+
+const featuredProjects: Array<Project> = Projects.filter((project) => project.featured);
 
 const Home = () => {
   return (
@@ -20,12 +24,12 @@ const Home = () => {
           <MiniP>I'm a full-stack developer creating exceptional digital experiences. I love systems thinking, gastronomy, continuous growth, and slow coffee. I'm a recent graduate from victoria, bc.</MiniP>
         </IntroContainer>
       </SectionCont>
-        <BigProject />
-        <BigProject />
-        <BigProject />
+
       <SectionCont>
         <ContentContainer>
-
+          {featuredProjects.map((item: Project ,index: number) =>
+            (<BigProject project={item} key={index} isEven={index % 2 === 0} />
+          ))}
         </ContentContainer>
       </SectionCont>
       <HR />

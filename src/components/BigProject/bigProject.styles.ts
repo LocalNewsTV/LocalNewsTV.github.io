@@ -1,31 +1,49 @@
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
 import { black, accent } from '../../assets/Theming';
+import { Link } from 'react-router-dom';
+
+type Props = {
+  isEven?: boolean;
+};
 
 export const ProjectCont = styled.div`
   display: flex;
   position: relative;
   justify-content: space-between;
-  padding: 2em;
-  box-content: content-box;
-  width: 600pt;
+  filter: grayscale(100%);
+  box-sizing: content-box;
+  width: 100%;
   min-height: 200pt;
-  max-height: 100%;
-  margin-top: 15pt;
+  margin-top: 60pt;
+  @media (min-width: ${mq.tablet}){
+    width: 600pt;
+    margin-top: 90pt;
+    padding: 2em;
+  }
+  &:hover {
+    transition: 0.4s ease-in;
+    filter: grayscale(0%);
+  }
 `;
-export const ImgContent = styled.div`
-  display: flex;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
+export const ImgContent = styled.div<Props>`
+  display: none;
+
+  width: 100%;
   height: 100%;
   justify-content: flex-end;
   background-color: none;
   overflow: hidden;
-  filter: grayscale(100%);
+  filter: grayscale(65%);
+  @media (min-width: ${mq.tablet}){
+    position: absolute;
+    top: 0;
+    ${({isEven}) => isEven ? 'left: 0' : 'right: 0'};
+    display: flex;
+    width: 50%;
+  }
   &:hover {
-    transition: 0.6s ease-in;
+    transition: 0.4s ease-in;
     filter: grayscale(0%);
   }
 `;
@@ -36,45 +54,65 @@ export const Img = styled.img`
 export const Icon = styled.img`
 height: 20pt;
 width: 20pt;
+`;
+export const TextContent = styled.div<Props>`
+  display: flex;
+  padding: 10pt;
+  ${({isEven}) => (isEven ? 'right: 0' : 'left: 0') };
+  align-items: ${({isEven}) => (isEven ? 'end' : 'start') };
+  flex-direction: column;
+  max-width: 100vw;
+  min-height: 100%;
+  @media (min-width: ${mq.tablet}){
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    width: 60%;
+    z-index: 1;
+  }
+  background-color: none;
+`
+export const StyledLink = styled(Link)`
 &:nth-of-type(even){
   margin: 0 10pt;
 }
-`;
-export const TextContent = styled.div`
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  flex-direction: column;
-  width: 60%;
-  min-height: 100%;
-  background-color: none;
 `
-
 export const FeaturedProject = styled.p`
   margin: 0;
   padding: 0;
-  color: #8686A3;
+  color: #2F7872;
+  font-size: 11pt;
+  font-weight: 600;
+`;
+
+export const DescriptionText = styled.p`
   font-size: 11pt;
 `;
 export const ProjectHeader = styled.h3`
   margin: 0;
   padding: 0;
+  color: ${black};
   font-size: 18pt;
 `;
 
-export const DescriptionBox = styled.div`
-  font-size: 12pt;
-  margin: 1em 0 auto 0;
-  background-color: #79797955;
+export const DescriptionBox = styled.div<Props>`
+  text-align: ${({isEven}) => isEven ? ' right' : 'left' };
+  font-size: 12pt; 
+  margin: 0;
+  background-color: #C9F2EF95;
   color: ${black};
   padding: 10pt;
   border-radius: 5pt;
+  @media (min-width: ${mq.tablet}) {
+    margin: 1em 0 auto 0;
+  }
 `;
 
-export const ThinContainer = styled.div`
+export const ThinContainer = styled.div<Props>`
   display: flex;
+  justify-content: ${({isEven}) => (isEven ? 'flex-end' : 'flex-start')};
+  flex-wrap: wrap;
+  width: 100%;
   margin-bottom: 10pt;
   &:last-of-type{
     margin-bottom: auto;
@@ -82,9 +120,10 @@ export const ThinContainer = styled.div`
 `;
 
 export const TechTag = styled.p`
-  margin: 0 5pt;
-  padding: 2pt;
+  margin: 0 10pt 0 0;
+  padding: 2pt 4pt 2pt 0;
   font-size: 10pt;
+  color: #C9504A;
   &:first-of-type{
     margin-left: 0;
     padding-left: 0;

@@ -34,7 +34,8 @@ export const SectionCont = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  box-sizing: border-box;
+  box-sizing: content-box;
+  padding: 10pt;
   align-items: center;
   width: 100%;
   background-color: ${section};

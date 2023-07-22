@@ -1,39 +1,56 @@
-import { DescriptionBox, FeaturedProject, Icon, Img, ImgContent, ProjectCont, ProjectHeader, TechTag, TextContent, ThinContainer } from "./bigProject.styles"
-import wayfinder from '/projects/wayfinder/Wayfinder.png';
+import { DescriptionBox, DescriptionText, FeaturedProject, Icon, Img, ImgContent, ProjectCont, ProjectHeader, StyledLink, TechTag, TextContent, ThinContainer } from "./bigProject.styles"
 import github from '/github.svg';
 import external from '/external.svg';
+import readmore from '/sticky.svg';
+import Project from "../../types/Project";
 
 
-const BigProject = () => {
+type Props = {
+  isEven?: boolean;
+  project: Project;
+}
+
+const BigProject = ({
+  isEven,
+  project
+}:Props) => {
   return (
     <ProjectCont>
-    <TextContent>
+    <TextContent isEven={isEven} >
       <FeaturedProject>Featured Project</FeaturedProject>
-      <ProjectHeader>BC Wayfinder</ProjectHeader>
-      <DescriptionBox>
-        <p>So many words So many words So many words So many words
-        Word words word</p>
-        <p>So many words So many words So many words So many words
-        Word words word</p>
+      <ProjectHeader>{project.projectTitle}</ProjectHeader>
+      <DescriptionBox
+        isEven={isEven}
+      >
+        {project.description.map((item) => <DescriptionText>{item}</DescriptionText>)}
       </DescriptionBox>
-      <ThinContainer>
-        <TechTag>React</TechTag>
-        <TechTag>TypeScript</TechTag>
-        <TechTag>Emotion</TechTag>
-        <TechTag>PWA</TechTag>
+      <ThinContainer 
+        isEven={isEven}
+      >
+        {project.tech.map((item) => <TechTag key={item}>{item}</TechTag>)}
       </ThinContainer>
-      <ThinContainer>
-        <Icon 
-          src={github}
-        />
-        <Icon 
-          src={external}
-        />
+      <ThinContainer
+        isEven={isEven}
+      >
+        {project.repo
+        &&  <StyledLink to={project.repo}>
+              <Icon src={github} alt="GitHub Repository" />
+            </StyledLink>}
+        {project.liveLink
+        &&  <StyledLink to={project.liveLink}>
+              <Icon src={external} alt="External Link" />
+            </StyledLink>}
+        {project.moreInfo
+        &&  <StyledLink to={project.moreInfo}>
+              <Icon src={readmore} alt="Read More" />
+            </StyledLink>}
       </ThinContainer>
     </TextContent>
-    <ImgContent>
+    <ImgContent 
+      isEven={isEven}
+    >
       <Img
-        src={wayfinder}
+        src={project?.projectImage}
       />
     </ImgContent>
   </ProjectCont>
