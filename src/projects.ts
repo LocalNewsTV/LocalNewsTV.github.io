@@ -31,7 +31,8 @@ const Projects: Array<Project> = [
       'Emotion',
       'PWA',
       'Express',
-      'MongoDB'
+      'MongoDB',
+      'PowerBI',
     ],
     repo: 'https://github.com/bcgov/citz-imb-wayfinder',
     liveLink: 'https://wayfinder.apps.silver.devops.gov.bc.ca/',
@@ -56,6 +57,23 @@ const Projects: Array<Project> = [
     ],
     repo: 'https://github.com/LocalNewsTV/list-manager-frontend',
     liveLink: 'https://localnewstv.github.io/home-to-do-list/',
+    moreInfo: '',
+  },
+  {
+    featured: true,
+    projectTitle: 'Grocery Assistant',
+    projectImage: '/projects/groceryassistant/Grocery-Assistant.png',
+    description: [
+      'A convenient application available on the Google Play Store that provides users with the ability to convert various measurements and prices, helping them make well-informed buying choices. The app also features a locally stored grocery list, allowing users to keep their shopping list and calculations all in one place.',
+    ],
+    tech: [
+      'React Native',
+      'Expo',
+      'Google Play',
+      'Android',
+    ],
+    repo: '',
+    liveLink: 'https://play.google.com/store/apps/details?id=com.localnewstv.groceryassistant',
     moreInfo: '',
   },
 ]
