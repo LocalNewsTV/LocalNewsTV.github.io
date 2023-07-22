@@ -22,7 +22,7 @@ const BigProject = ({
       <DescriptionBox
         isEven={isEven}
       >
-        {project.description.map((item) => <DescriptionText>{item}</DescriptionText>)}
+        {project.description.map((item, index) => <DescriptionText key={index}>{item}</DescriptionText>)}
       </DescriptionBox>
       <ThinContainer 
         isEven={isEven}
