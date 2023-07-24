@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
-import { black, accent } from '../../assets/Theming';
+import { black, accent, bluebox } from '../../assets/Theming';
 import { Link } from 'react-router-dom';
 
 type Props = {
@@ -24,6 +24,9 @@ export const ProjectCont = styled.div`
   &:hover {
     transition: 0.4s ease-in;
     filter: grayscale(0%);
+  }
+  &:last-of-type{
+    margin-bottom: 90pt;
   }
 `;
 export const ImgContent = styled.div<Props>`
@@ -99,7 +102,7 @@ export const DescriptionBox = styled.div<Props>`
   text-align: ${({isEven}) => isEven ? ' right' : 'left' };
   font-size: 12pt; 
   margin: 0;
-  background-color: #C9F2EF95;
+  background-color: ${bluebox};
   color: ${black};
   padding: 10pt;
   border-radius: 5pt;

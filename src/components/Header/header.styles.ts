@@ -23,6 +23,7 @@ export const HeaderCont = styled.header`
   @media (min-width: ${mq.tablet}){
     flex-direction: row;
     padding: 0 1.5em;
+    height: 45pt;
   }
 `
 export const MainCont = styled.div`

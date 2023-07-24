@@ -26,12 +26,10 @@ const Projects: Array<Project> = [
       'BC Wayfinder was a proof of concept designed for the Government of British Columbia\'s Ministry of Citizens\' Services Information Management Branch in 2023. The application was created to showcase the geographic locations of services, helping guide citizens to their destinations. Additionally, the application collected anonymous analytics, which were later turned into reports using Power BI.'
     ],
     tech: [
-      'React',
       'TypeScript',
       'Emotion',
       'PWA',
-      'Express',
-      'MongoDB',
+      'MERN',
       'PowerBI',
     ],
     repo: 'https://github.com/bcgov/citz-imb-wayfinder',
@@ -47,9 +45,7 @@ const Projects: Array<Project> = [
       'The application\'s sessions are stored and controlled through JWTs (JSON Web Tokens) granted by the Express API hosted on Render.com',
     ],
     tech: [
-      'MongoDB',
-      'Express.js',
-      'React',
+      'MERN',
       'NodeJS',
       'Passport',
       'JWT',
