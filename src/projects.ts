@@ -17,7 +17,7 @@ import Project from "./types/Project";
  */
 
 
-const Projects: Array<Project> = [
+const projectsList: Array<Project> = [
   {
     featured: true,
     projectTitle: 'BC Wayfinder',
@@ -74,4 +74,4 @@ const Projects: Array<Project> = [
   },
 ]
 
-export default Projects;
+export default projectsList;
