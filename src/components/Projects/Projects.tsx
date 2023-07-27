@@ -1,7 +1,7 @@
 import projectsList from '../../projects';
 import Project from '../../types/Project';
 import BigProject from '../BigProject/BigProject';
-import { AccentSpan, ContentContainer, FullSectionCont, HeaderTwo } from './projects.styles';
+import { AccentSpan, ContentContainer, FullSectionCont, HeaderTwo } from './Projects.styles';
 
 const Projects = () => {
   const featuredProjects: Array<Project> = projectsList.filter((project) => project.featured);
