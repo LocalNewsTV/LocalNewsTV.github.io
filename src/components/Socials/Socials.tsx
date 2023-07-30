@@ -30,13 +30,13 @@ const Socials = () => {
           title="LinkedIn"
         />
       </Link>
-      <Link to="https://google.ca/">
+      <a href="/Resume.pdf">
         <SocialIcon
           src={resume}
           alt="Resume"
           title="Resume"
         />
-      </Link>
+      </a>
     </ContactInfo>
   )
 }

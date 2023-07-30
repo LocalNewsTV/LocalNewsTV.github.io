@@ -22,11 +22,6 @@ export const ContactInfo = styled.div`
     color: black;
     bottom: 0;
     min-height: 100svh;
-    &:nth-of-type(even){
-      right: 0;
-    }
-    &:nth-of-type(odd){
-      left: 0;
-    }
+    left: 0;
   }
 `;
