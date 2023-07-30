@@ -1,6 +1,17 @@
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
-import { hero, section, sectionAccent } from '../../assets/Theming';
+import { accent, hero, section, sectionAccent } from '../../assets/Theming';
+import { NavLink } from 'react-router-dom';
+
+export const StyledLink = styled(NavLink)`
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: ${accent};
+  }
+`;
 
 export const FullSectionCont = styled.div`
   display: flex;

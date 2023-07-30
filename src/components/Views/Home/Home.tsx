@@ -7,6 +7,7 @@ import Intro from '../../Intro/Intro';
 import Socials from '../../Socials/Socials';
 import Projects from '../../Projects/Projects';
 import Experience from '../../Experience/Experience';
+import Contact from '../../Contact/Contact';
 
 const Home = () => {
   return (
@@ -17,6 +18,8 @@ const Home = () => {
       <Experience />
       <HR />
       <Projects />
+      <HR />
+      <Contact />
       <Socials />
     </MainCont>
   )
