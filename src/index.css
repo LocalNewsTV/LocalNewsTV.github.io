@@ -6,8 +6,11 @@
   align-items: center;
   box-sizing: border-box;
 }
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open Sans', sans-serif;
+}
 body, html {
-  font-family: 'Open Sans Variable', sans-serif;
+  font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   width: 100%;
   display: flex;
