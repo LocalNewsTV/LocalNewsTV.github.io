@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
-import { accent, bluebox, navBar, section, sectionAccent } from '../../assets/Theming';
+import { accent, bluebox, sectionAccent } from '../../assets/Theming';
 import { NavLink } from 'react-router-dom';
 
 type ExperienceProps = {
@@ -35,7 +35,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   @media (min-width: ${mq.tablet}){
-    margin-left: 2.5em;
+    padding-left: 1.25em;
+    margin-left: 1.25em;
     max-width: 55%;
   }
 `;
@@ -59,13 +60,12 @@ export const ListItem = styled.li<ExperienceProps>`
   display: flex;
   white-space: nowrap;
   width: 100%;
+  color: ${({selected}) => (selected ? accent : 'inherit')};
   font-size: 11pt;
-  display: inline
   align-items: center;
   padding: 0.25em 0.5em;
   height: 2em;
-  text-items: center;
-  object-fit: scale-down;
+  margin: 0;
   background-color: ${({selected}) => (selected ? '#EAEAEA' : 'inherit')};
   &:hover {
     transition: 0.35s ease-in;
@@ -73,6 +73,8 @@ export const ListItem = styled.li<ExperienceProps>`
   }
   @media (min-width: ${mq.tablet}){
     padding: 0.5em;
+    border-radius: 0 5pt 5pt 0;
+    border-left: ${({selected}) => (selected ? `1px solid ${accent}` : 'none')};
   }
 `;
 export const TabSection = styled.div`

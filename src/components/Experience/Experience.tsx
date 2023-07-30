@@ -47,7 +47,7 @@ const Experience = () => {
           </Title>
           <EmployDate>
             {experience.start}
-            &nbsp;-&nbsp;
+            &nbsp;&#8212;&nbsp;
             {experience.end}
           </EmployDate>
           <ExperienceList>
