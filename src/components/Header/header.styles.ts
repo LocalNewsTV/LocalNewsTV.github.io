@@ -1,10 +1,14 @@
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
-import { navBar } from '../../assets/Theming';
+import { navBar, sectionAccent } from '../../assets/Theming';
 
 type HeaderProps = {
   menu: boolean;
 }
+export const AccentSpan = styled.span`
+  color: ${sectionAccent};
+  font-size: 10pt;
+`;
 export const HeaderCont = styled.header`
   position: fixed;
   box-sizing: border-box;

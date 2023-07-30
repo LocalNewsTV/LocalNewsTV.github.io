@@ -6,7 +6,7 @@ import { AccentSpan, ContentContainer, FullSectionCont, HeaderTwo } from './proj
 const Projects = () => {
   const featuredProjects: Array<Project> = projectsList.filter((project) => project.featured);
   return (
-    <FullSectionCont id="projects">
+    <FullSectionCont id="work">
       <ContentContainer>
         <HeaderTwo>
           <AccentSpan>03.</AccentSpan> Some Things I've Built.

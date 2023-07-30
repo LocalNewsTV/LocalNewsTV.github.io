@@ -1,16 +1,24 @@
 import { useState } from "react";
 import { NavLink } from 'react-router-dom';
-import { Banner, HeaderCont, MainCont, Logo, Title, NavCont, NavItem, Hamburger, MenuImg } from "./header.styles";
+import { Banner, HeaderCont, MainCont, Logo, Title, NavCont, NavItem, Hamburger, MenuImg, AccentSpan } from "./header.styles";
+import { HashLink as Link } from 'react-router-hash-link';
 import hamburger from '/Hamburger.svg';
 import cancel from '/Cancel.svg';
 
-type NavURLProps = {destination: string}
+type NavURLProps = {
+  destination: string;
+  num: string;
+}
 
-const NavURL = ({destination}:NavURLProps) => (
+const NavURL = ({
+  destination,
+  num
+}:NavURLProps) => (
   <NavItem>
-    <NavLink to={`/${destination}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+    <AccentSpan>{num}&nbsp;</AccentSpan>
+    <Link to={`#${destination.toLowerCase()}`} style={{ textDecoration: 'none', color: 'inherit' }}>
       {destination}
-    </NavLink>
+    </Link>
   </NavItem>
 );
 
@@ -20,8 +28,12 @@ const Header = () => {
     <HeaderCont>
       <MainCont>
         <Banner>
-          <Logo src="/Logo.png" alt="Matthew Logan Logo" />
-          <Title>Matthew&nbsp;Logan</Title>
+          <NavLink to="/">
+            <Logo src="/Logo.png" alt="Matthew Logan Logo" />
+          </NavLink>
+          <NavLink to="/" style={{textDecoration: 'none'}}>
+            <Title>Matthew&nbsp;Logan</Title>
+          </NavLink>
           <Hamburger
             menu={menu}
             onClick={() => setMenu(!menu)}
@@ -34,15 +46,10 @@ const Header = () => {
           </Hamburger>
         </Banner>
         <NavCont menu={menu}>
-          <NavItem>
-            <NavLink to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-              Home
-            </NavLink>
-          </NavItem>
-          <NavURL destination="About" />
-          <NavURL destination="Contact" />
-          <NavURL destination="Projects" />
-          <NavURL destination="Resume" />
+          <NavURL destination="About" num="01." />
+          <NavURL destination="Experience" num="02." />
+          <NavURL destination="Work" num="03." />
+          <NavURL destination="Contact" num="04." />
         </NavCont>
       </MainCont>
     </HeaderCont>
