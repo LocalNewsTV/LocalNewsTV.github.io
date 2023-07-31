@@ -7,3 +7,5 @@ type JobExperience = {
   start: string;
   end: string;
 }
+
+export default JobExperience;

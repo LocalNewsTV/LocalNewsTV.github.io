@@ -1,3 +1,4 @@
+import JobExperience from '../../types/JobExperience';
 import { useState } from 'react';
 import {
   AccentSpan,
@@ -17,6 +18,7 @@ import {
 import jobExperience from '../../content/JobExperience';
 
 const Experience = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   const [experience, setExperience] = useState<JobExperience>(jobExperience[0]);
   return (
     <SmallSectionCont id="experience">
