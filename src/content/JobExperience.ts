@@ -1,3 +1,5 @@
+import JobExperience from "../types/JobExperience";
+
 const jobExperience: Array<JobExperience> = [
   {
     ref: "GovStu",
