@@ -20,6 +20,7 @@ import Project from "./types/Project";
 const projectsList: Array<Project> = [
   {
     featured: true,
+    year: 2023,
     projectTitle: 'BC Wayfinder',
     projectImage: '/projects/wayfinder/Wayfinder.png',
     description: [
@@ -38,6 +39,7 @@ const projectsList: Array<Project> = [
   },
   {
     featured: true,
+    year: 2023,
     projectTitle: 'List Manager',
     projectImage: '/projects/listmanager/List-Manager.png',
     description: [
@@ -57,6 +59,7 @@ const projectsList: Array<Project> = [
   },
   {
     featured: true,
+    year: 2023,
     projectTitle: 'Grocery Assistant',
     projectImage: '/projects/groceryassistant/Grocery-Assistant.png',
     description: [

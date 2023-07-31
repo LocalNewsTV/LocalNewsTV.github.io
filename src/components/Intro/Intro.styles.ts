@@ -2,6 +2,20 @@ import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
 import { black, sectionAccent, section, hero } from '../../assets/Theming';
 
+export const BigP = styled.p`
+  font-family: 'Open Sans Variable', sans-serif;
+  font-size: 26pt;
+  color: ${black};
+  margin: 0;
+  padding: 0;
+  &:nth-of-type(3){
+    color: #8686A3;
+  }
+  @media (min-width: ${mq.mobile}){
+    font-size: 53pt;
+  }
+`;
+
 export const FullSectionCont = styled.div`
   display: flex;
   position: relative;
@@ -37,22 +51,6 @@ export const IntroP = styled.p`
     font-size: 16pt;
   }
 `;
-
-
-export const BigP = styled.p`
-  font-family: 'Open Sans Variable', sans-serif;
-  font-size: 26pt;
-  color: ${black};
-  margin: 0;
-  padding: 0;
-  &:nth-of-type(3){
-    color: #8686A3;
-  }
-  @media (min-width: ${mq.mobile}){
-    font-size: 53pt;
-  }
-`;
-
 
 export const MiniP = styled.p`
   font-size: 10pt;

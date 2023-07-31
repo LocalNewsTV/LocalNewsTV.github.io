@@ -4,6 +4,7 @@
  */
 type Project = {
   projectTitle: string;
+  year: number;
   projectImage: string;
   description: Array<string>;
   tech: Array<string>

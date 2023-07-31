@@ -12,6 +12,18 @@ export const AccentSpan = styled.span`
   font-size: 12pt;
 `;
 
+export const Container = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: ${mq.tablet}){
+    padding-left: 1.25em;
+    margin-left: 1.25em;
+    max-width: 55%;
+  }
+`;
+
 export const ContentContainer = styled.div`
   position: relative;
   display: flex;
@@ -29,16 +41,34 @@ export const ContentContainer = styled.div`
   }
 `;
 
-export const Container = styled.div`
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  @media (min-width: ${mq.tablet}){
-    padding-left: 1.25em;
-    margin-left: 1.25em;
-    max-width: 55%;
-  }
+export const Employer = styled(NavLink)`
+  text-decoration: none;
+  font-size: inherit;
+  color: ${accent};
+`;
+
+export const EmployDate = styled.p`
+  font-size: 10pt;
+`;
+
+export const ExperienceList = styled.ul`
+  list-style-image: url('/ListMarker.svg');
+  margin: 0;
+  padding: 1em;
+`;
+
+export const HeaderTwo = styled.h2`
+  position: absolute;
+  top: 0;
+  font-size: 16pt;
+  left: 20%;
+  margin: 0;
+  padding: 0;
+`;
+
+export const JobDetails = styled.li`
+  font-size: 12pt;
+  padding-bottom: 8pt;
 `;
 
 export const List = styled.ul`
@@ -77,24 +107,6 @@ export const ListItem = styled.li<ExperienceProps>`
     border-left: ${({selected}) => (selected ? `1px solid ${accent}` : 'none')};
   }
 `;
-export const TabSection = styled.div`
-  display: flex;
-  width: 100%;
-  align-items: ;
-  @media (min-width: ${mq.tablet}){
-    height: 100%;
-    max-width: 15%;
-  }
-`;
-
-export const HeaderTwo = styled.h2`
-  position: absolute;
-  top: 0;
-  font-size: 16pt;
-  left: 20%;
-  margin: 0;
-  padding: 0;
-`;
 
 export const SmallSectionCont = styled.div`
   display: flex;
@@ -106,8 +118,15 @@ export const SmallSectionCont = styled.div`
   min-height: 40svh;
   align-items: center;
   width: 100%;
-  @media (min-width: ${mq.mobile}){
-    
+`;
+
+export const TabSection = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: ;
+  @media (min-width: ${mq.tablet}){
+    height: 100%;
+    max-width: 15%;
   }
 `;
 
@@ -115,23 +134,4 @@ export const Title = styled.p`
   font-size: 16pt;
   margin: 0;
   padding: 0;
-`;
-export const Employer = styled(NavLink)`
-  text-decoration: none;
-  font-size: inherit;
-  color: ${accent};
-`;
-export const EmployDate = styled.p`
-  font-size: 10pt;
-`;
-
-export const ExperienceList = styled.ul`
-  list-style-image: url('/ListMarker.svg');
-  margin: 0;
-  padding: 1em;
-`;
-
-export const JobDetails = styled.li`
-  font-size: 12pt;
-  padding-bottom: 8pt;
 `;

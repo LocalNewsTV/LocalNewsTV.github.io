@@ -20,7 +20,6 @@ const Home = () => {
       <Projects />
       <HR />
       <Contact />
-      <Socials />
     </MainCont>
   )
 }

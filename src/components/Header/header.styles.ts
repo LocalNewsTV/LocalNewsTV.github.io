@@ -9,6 +9,35 @@ export const AccentSpan = styled.span`
   color: ${sectionAccent};
   font-size: 10pt;
 `;
+
+export const Banner = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-left: 1em;
+  justify-content: center;
+  @media (min-width: ${mq.tablet}){
+    justify-content: flex-start;
+    width: auto;
+  }
+`;
+
+export const Hamburger = styled.button<HeaderProps>`
+  height: 27pt;
+  padding-top: 4pt;
+  width: 27pt;
+  color: #16161D;
+  border: none;
+  transform: rotate(${(props) => (props.menu ? 90 : 0)}deg);
+  transition: all 0.25s;
+  background: inherit;
+  margin: 0 1.5em 0 auto;
+  &:hover { cursor: pointer; }
+  @media(min-width: ${mq.tablet}){
+    display: none;
+  }
+`;
+
 export const HeaderCont = styled.header`
   position: fixed;
   box-sizing: border-box;
@@ -29,7 +58,13 @@ export const HeaderCont = styled.header`
     padding: 0 1.5em;
     height: 45pt;
   }
-`
+`;
+
+export const Logo = styled.img`
+  height: 30pt;
+  margin: 0 8pt 0 4pt;
+`;
+
 export const MainCont = styled.div`
   display: flex;
   width: 100%;
@@ -41,6 +76,16 @@ export const MainCont = styled.div`
     width: auto;
   }
 `;
+
+export const MenuImg = styled.img`
+  height: 100%;
+  width: 100%;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+`;
+
 export const NavCont = styled.ul<HeaderProps>`
   display: ${(props) => props.menu ? 'flex' : 'none'};
   flex-direction: column;
@@ -84,52 +129,12 @@ export const NavItem = styled.li`
     height: auto;
   }
 `;
-export const Logo = styled.img`
-  height: 30pt;
-  margin: 0 8pt 0 4pt;
-`;
 
-export const Banner = styled.div`
-  display: flex;
-  width: 100%;
-  align-items: center;
-  margin-left: 1em;
-  justify-content: center;
-  @media (min-width: ${mq.tablet}){
-    justify-content: flex-start;
-    width: auto;
-  }
-`;
 export const Title = styled.h1`
   padding: 0;
   font-size: 20pt;
   color: #16161D;
   @media (min-width: ${mq.tablet}){
     font-size: 24pt;
-  }
-`;
-
-export const Hamburger = styled.button<HeaderProps>`
-  height: 27pt;
-  padding-top: 4pt;
-  width: 27pt;
-  color: #16161D;
-  border: none;
-  transform: rotate(${(props) => (props.menu ? 90 : 0)}deg);
-  transition: all 0.25s;
-  background: inherit;
-  margin: 0 1.5em 0 auto;
-  &:hover { cursor: pointer; }
-  @media(min-width: ${mq.tablet}){
-    display: none;
-  }
-`;
-
-export const MenuImg = styled.img`
-  height: 100%;
-  width: 100%;
-  &:hover {
-    transform: scale(1.1);
-    cursor: pointer;
   }
 `;
