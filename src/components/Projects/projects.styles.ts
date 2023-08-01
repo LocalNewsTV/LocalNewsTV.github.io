@@ -1,3 +1,7 @@
+/**
+ * @desc   Styled Components for Projects section of Portfolio
+ * @author LocalNewsTV
+ */
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
 import { accent, hero, section, sectionAccent } from '../../assets/Theming';

@@ -1,3 +1,7 @@
+/**
+ * @desc   Contact Section of Portfolio, contains a call to action (Email me)
+ * @author LocalNewsTV
+ */
 import { NavLink } from "react-router-dom";
 import { AccentSpan, Button, ContentContainer, SmallSectionCont, HeaderTwo, HeaderThree, ContactText } from "./contact.styles";
 import contactsInfo from "../../content/content";

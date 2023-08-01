@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from '../components/Views/Home/Home';
-import Archive from '../components/Archive/Archive';
+import Archive from '../components/Views/Archive/Archive';
 
 export default function ViewRouter() {
   return (

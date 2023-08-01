@@ -1,4 +1,4 @@
-import { BigP, FullSectionCont, IntroContainer, IntroP, MiniP } from "./Intro.styles";
+import { BigP, FullSectionCont, IntroContainer, IntroP, MiniP } from "./intro.styles";
 
 const Intro = () => (
   <FullSectionCont id="intro">

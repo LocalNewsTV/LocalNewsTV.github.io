@@ -1,17 +1,29 @@
+/**
+ * @desc   View Container for the Archive section of the portfolio
+ * @author LocalNewsTV
+ */
+
 import { Builtwith, ContentContainer, HeaderTwo, Icon, StyledData, StyledLink, StyledRow, StyledTable, StyledTableHeader, SubHeader, ViewContainer } from "./archive.styles";
-import projectsList from "../../projects";
+import projectsList from "../../../projects";
 import github from '/github.svg';
 import external from '/external.svg';
 import readmore from '/sticky.svg';
 
+/**
+ * @desc    Projects table to display current and past projects/tools created
+ *          along with the tools and links to live demos 
+ */
 const ProjectTable = () => (
   <StyledTable>
-    <StyledRow>
-      <StyledTableHeader>Year</StyledTableHeader>
-      <StyledTableHeader>Title</StyledTableHeader>
-      <StyledTableHeader>Built With</StyledTableHeader>
-      <StyledTableHeader>Link</StyledTableHeader>
-    </StyledRow>
+    <thead>
+      <StyledRow>
+        <StyledTableHeader>Year</StyledTableHeader>
+        <StyledTableHeader>Title</StyledTableHeader>
+        <StyledTableHeader>Built With</StyledTableHeader>
+        <StyledTableHeader>Link</StyledTableHeader>
+      </StyledRow>
+    </thead>
+    <tbody>
     {projectsList.map((item, index) =>
       <StyledRow key={index}>
         <StyledData>{item.year}</StyledData>
@@ -33,17 +45,20 @@ const ProjectTable = () => (
         </StyledData>
       </StyledRow>
     )}
+    </tbody>
   </StyledTable>
 )
-
+/**
+ * @desc Main Component for the Archive View, 
+ */
 const Archive = () => {
   return (
     <ViewContainer>
       <ContentContainer>
         <HeaderTwo>Archive</HeaderTwo>
-        <SubHeader>
-          A big list of things I've worked on
-        </SubHeader>
+          <SubHeader>
+            A big list of things I've worked on
+          </SubHeader>
         <ProjectTable />
       </ContentContainer>
     </ViewContainer>

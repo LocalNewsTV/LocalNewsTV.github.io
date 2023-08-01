@@ -1,3 +1,7 @@
+/**
+ * @desc   Styled Components for the Experience Section
+ * @author LocalNewsTV
+ */
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
 import { accent, bluebox, sectionAccent } from '../../assets/Theming';

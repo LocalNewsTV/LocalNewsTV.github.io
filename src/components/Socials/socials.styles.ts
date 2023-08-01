@@ -1,3 +1,7 @@
+/**
+ * @desc   Styled Components for Contact Information
+ * @author LocalNewsTV
+ */
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
 

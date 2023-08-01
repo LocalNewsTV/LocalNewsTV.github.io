@@ -1,7 +1,11 @@
+/**
+ * @desc   Style sheet for Archive View
+ * @author LocalNewsTV
+ */
 import styled from '@emotion/styled';
-import mq from '../../utilities/mq';
+import mq from '../../../utilities/mq';
 import { Link } from 'react-router-dom';
-import { bluebox } from '../../assets/Theming';
+import { bluebox } from '../../../assets/Theming';
 
 export const Builtwith = styled.td`
   font-size: 10pt;
@@ -31,13 +35,13 @@ export const Icon = styled.img`
 
 export const StyledRow = styled.tr`
   height: 3em;
-  &:not(:first-of-type):nth-of-type(odd){
+  &:nth-of-type(odd){
     background-color: inherit;
   }
-  &:not(:first-of-type):nth-of-type(even){
+  &:nth-of-type(even){
     background-color: #f7f8f8;
   }
-  &:not(:first-of-type):hover{
+  tbody &:hover{
     transition: 0.35s ease-in;
     color: #036;
     background-color: ${bluebox};
@@ -58,7 +62,7 @@ export const StyledLink = styled(Link)`
 `;
 
 export const StyledTable = styled.table`
-  margin-top: 3em;
+  margin: 3em 0;
   border-collapse: collapse;
 `;
 

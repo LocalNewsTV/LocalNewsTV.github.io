@@ -1,9 +1,14 @@
+/**
+ * @desc   Header component for the Portfolio Website
+ * @author LocalNewsTV
+ */
 import { useState } from "react";
 import { NavLink, useLocation } from 'react-router-dom';
 import { Banner, HeaderCont, MainCont, Logo, Title, NavCont, NavItem, Hamburger, MenuImg, AccentSpan } from "./header.styles";
 import { HashLink as Link } from 'react-router-hash-link';
 import hamburger from '/Hamburger.svg';
 import cancel from '/Cancel.svg';
+
 
 type NavURLProps = {
   destination: string;
@@ -22,6 +27,9 @@ const NavURL = ({
   </NavItem>
 );
 
+/**
+ * @desc Main component Portfolio Header
+ */
 const Header = () => {
   const [menu, setMenu] = useState(false);
   const { pathname } = useLocation();

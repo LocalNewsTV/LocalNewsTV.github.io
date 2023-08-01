@@ -1,3 +1,7 @@
+/**
+ * @desc   Styled Components for intro section 
+ * @author LocalNewsTV
+ */
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
 import { black, sectionAccent, section, hero } from '../../assets/Theming';

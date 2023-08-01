@@ -1,3 +1,7 @@
+/**
+ * @desc   Component for Large Projects displayed on Main page of Portfolio
+ * @author LocalNewsTV
+ */
 import { DescriptionBox, DescriptionText, FeaturedProject, Icon, Img, ImgContent, ProjectCont, ProjectHeader, StyledLink, TechTag, TextContent, ThinContainer } from "./bigProject.styles"
 import github from '/github.svg';
 import external from '/external.svg';

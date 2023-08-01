@@ -1,3 +1,7 @@
+/**
+ * @desc   Styled Components for Header section
+ * @author LocalNewsTV
+ */
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
 import { navBar, sectionAccent } from '../../assets/Theming';

@@ -1,6 +1,10 @@
+/**
+ * @desc   Styled components for the About Section
+ * @author LocalNewsTV
+ */
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
-import { black, accent, sectionAccent } from '../../assets/Theming';
+import { black, accent, sectionAccent, section } from '../../assets/Theming';
 import { Link } from 'react-router-dom';
 
 export const AboutContainer = styled.div`
@@ -94,6 +98,18 @@ export const BodyText = styled.p`
   text-align: left;
 `;
 
+export const ContentContainer = styled.div`
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  max-width: ${mq.tablet};
+`;
+
 export const HeaderTwo = styled.h2`
   position: absolute;
   top: 0;
@@ -112,6 +128,18 @@ export const SkillsItem = styled.li`
   font-size: 10pt;
 `;
 
+export const SmallSectionCont = styled.div`
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10pt;
+  min-height: 40svh;
+  align-items: center;
+  width: 100%;
+  background-color: ${section};
+`;
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${accent};

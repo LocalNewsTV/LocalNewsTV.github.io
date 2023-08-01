@@ -1,9 +1,14 @@
 import JobExperience from "../types/JobExperience";
 
+/**
+ * @desc   Array Object to hold past and present work experiences for displaying in the Portfolio
+ * @type   {Array<JobExperience>}
+ * @author LocalNewsTV
+ */
 const jobExperience: Array<JobExperience> = [
   {
     ref: "GovStu",
-    place: "Government of BC",
+    place: "Citizens' Services",
     position: "Capstone Student",
     link: "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services",
     details: [

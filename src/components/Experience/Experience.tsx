@@ -1,3 +1,7 @@
+/**
+ * @desc   Experience Component for Portfolio Page, Showcases Work related experience
+ * @author LocalNewsTV
+ */
 import JobExperience from '../../types/JobExperience';
 import { useState } from 'react';
 import {

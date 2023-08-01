@@ -1,3 +1,7 @@
+/**
+ * @desc Styled Components for Big Projects on main section of Portfolio
+ * @author LocalNewsTV
+ */
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
 import { black, bluebox } from '../../assets/Theming';

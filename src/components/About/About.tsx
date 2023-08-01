@@ -1,4 +1,8 @@
-import { ContentContainer, SmallSectionCont } from '../Views/Home/home.styles';
+/**
+ * @desc   About Section Component for the Portfolio Page Provides details about self, formatted with a headshot
+ * @author LocalNewsTV
+ */
+import { ContentContainer, SmallSectionCont } from './about.styles';
 import {
   AboutContainer,
   AboutContentContainer,
@@ -13,6 +17,9 @@ import {
 } from './about.styles';
 import myself from '/Matthew.jpeg';
 
+/**
+ * @desc Main Component for About Section
+ */
 const About = () => {
   const recentSkills: Array<string> = [
     'React',

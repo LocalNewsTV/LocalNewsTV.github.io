@@ -1,3 +1,7 @@
+/**
+ * @desc Component For Contact Information / Relevant Social Media tags
+ * @author LocalNewsTV
+ */
 import email from '/Email.svg';
 import github from '/githubsocial.svg';
 import resume from '/Resume.svg';

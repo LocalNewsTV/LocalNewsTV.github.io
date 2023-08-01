@@ -1,3 +1,7 @@
+/**
+ * @desc   Projects Component for Portfolio Page
+ * @author LocalNewsTV
+ */
 import projectsList from '../../projects';
 import Project from '../../types/Project';
 import BigProject from '../BigProject/BigProject';

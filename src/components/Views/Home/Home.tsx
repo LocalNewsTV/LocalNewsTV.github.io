@@ -1,3 +1,7 @@
+/**
+ * @desc   Main View for landing page of Portfolio
+ * @author LocalNewsTV
+ */
 import {
   HR,
   MainCont,
