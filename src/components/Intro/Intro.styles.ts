@@ -1,5 +1,5 @@
 /**
- * @desc   Styled Components for intro section 
+ * @desc   Styled Components for intro section of portfolio
  * @author LocalNewsTV
  */
 import styled from '@emotion/styled';
