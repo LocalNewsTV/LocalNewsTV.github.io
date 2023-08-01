@@ -33,7 +33,6 @@ const NavURL = ({
 const Header = () => {
   const [menu, setMenu] = useState(false);
   const { pathname } = useLocation();
-  console.log(pathname);
   return (
     <HeaderCont>
       <MainCont>
