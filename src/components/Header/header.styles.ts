@@ -138,6 +138,7 @@ export const Title = styled.h1`
   padding: 0;
   font-size: 20pt;
   color: #16161D;
+  margin: 0;
   @media (min-width: ${mq.tablet}){
     font-size: 24pt;
   }
