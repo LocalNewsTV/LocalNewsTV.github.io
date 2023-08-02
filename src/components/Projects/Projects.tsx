@@ -18,7 +18,7 @@ const Projects = () => {
         {featuredProjects.map((item: Project ,index: number) =>
           (<BigProject project={item} key={index} isEven={index % 2 === 0} />
         ))}
-        <StyledLink to="/archive" target="_blank" >Looking for more? View the Archive</StyledLink>
+        <StyledLink to="/archive">Looking for more? View the Archive</StyledLink>
       </ContentContainer>
     </FullSectionCont>
   )

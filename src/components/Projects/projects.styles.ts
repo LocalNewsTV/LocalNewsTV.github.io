@@ -5,7 +5,7 @@
 import styled from '@emotion/styled';
 import mq from '../../utilities/mq';
 import { accent, hero, section, sectionAccent } from '../../assets/Theming';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const AccentSpan = styled.span`
   color: ${sectionAccent};
@@ -50,7 +50,7 @@ export const HeaderTwo = styled.h2`
   padding: 0;
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
   text-decoration: none;
   color: inherit;
   &:hover {
