@@ -37,11 +37,11 @@ const BigProject = ({
         isEven={isEven}
       >
         {project.repo
-        &&  <StyledLink to={project.repo}>
+        &&  <StyledLink to={project.repo} target="_blank" >
               <Icon src={github} alt="GitHub Repository" />
             </StyledLink>}
         {project.liveLink
-        &&  <StyledLink to={project.liveLink}>
+        &&  <StyledLink to={project.liveLink} target="_blank" >
               <Icon src={external} alt="External Link" />
             </StyledLink>}
         {project.moreInfo

@@ -35,7 +35,7 @@ const ProjectTable = () => (
               <Icon src={github} alt="GitHub Repository" />
             </StyledLink>}
         {item.liveLink
-        &&  <StyledLink to={item.liveLink}>
+        &&  <StyledLink to={item.liveLink} target="_blank" >
               <Icon src={external} alt="External Link" />
             </StyledLink>}
         {item.moreInfo
