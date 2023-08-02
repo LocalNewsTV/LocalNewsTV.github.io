@@ -104,6 +104,7 @@ export const ListItem = styled.li<ExperienceProps>`
   &:hover {
     transition: 0.35s ease-in;
     background-color: ${bluebox};
+    cursor: pointer;
   }
   @media (min-width: ${mq.tablet}){
     padding: 0.5em;

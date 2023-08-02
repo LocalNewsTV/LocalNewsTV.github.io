@@ -6,7 +6,7 @@ export default function ViewRouter() {
   return (
     <Routes>
       <Route path="/" Component={Home} />
-      <Route path="/Archive" Component={Archive} />
+      <Route path="/archive" Component={Archive} />
       <Route path="*" Component={Home} />
     </Routes>
   )
