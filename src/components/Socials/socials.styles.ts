@@ -7,7 +7,11 @@ import mq from '../../utilities/mq';
 
 export const ContactInfo = styled.div`
   display: flex;
-  @media(min-width: ${mq.mobile}){
+  background-color: #F7F7F7;
+  width: 100%;
+  justify-content: center;
+  @media(min-width: ${mq.pc}){
+    width: auto;
     position: fixed;
     padding: 10pt;
     flex-direction: column;
