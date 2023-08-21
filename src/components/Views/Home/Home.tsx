@@ -11,6 +11,7 @@ import Intro from '../../Intro/Intro';
 import Projects from '../../Projects/Projects';
 import Experience from '../../Experience/Experience';
 import Contact from '../../Contact/Contact';
+import Socials from '../../Socials/Socials';
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Projects />
       <HR />
       <Contact />
+      <Socials />
     </MainCont>
   )
 }

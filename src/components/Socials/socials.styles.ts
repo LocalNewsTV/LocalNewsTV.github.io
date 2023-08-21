@@ -7,7 +7,7 @@ import mq from '../../utilities/mq';
 
 export const ContactInfo = styled.div`
   display: flex;
-  background-color: #F7F7F7;
+  background-color: none;
   width: 100%;
   justify-content: center;
   @media(min-width: ${mq.pc}){
