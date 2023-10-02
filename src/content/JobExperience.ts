@@ -7,6 +7,23 @@ import JobExperience from "../types/JobExperience";
  */
 const jobExperience: Array<JobExperience> = [
   {
+    ref: 'GovSus',
+    place: "Province of BC",
+    position: "Full Stack Developer",
+    link: "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/water-land-and-resource-stewardship",
+    details: [
+      'Engaging with the Ministry of Water, Land, and Resource Stewardship to meet their specific needs',
+      'Collaborating closely with a dedicated team of developers to support and enhance ministry applications',
+      'Adapting swiftly to evolving requirements, ensuring seamless alignment with the Service Owners\' objectives',
+      'Active participation in an Agile work environment, closely interfacing with Product Owners and Scrum Masters',
+      'Initiating modernization efforts within existing repositories as necessary and feasible',
+      'Harnessing the power of GitHub actions to enhance documentation and foster collaboration among colleagues',
+      'Implementing Docker environments to establish platform-agnostic development environments for team members'
+      ],
+    start: "Sept 2023",
+    end: "Present",
+  },
+  {
     ref: "GovStu",
     place: "Citizens' Services",
     position: "Capstone Student",

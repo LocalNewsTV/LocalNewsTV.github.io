@@ -27,6 +27,25 @@ const projectsList: Array<Project> = [
   {
     featured: false,
     year: 2023,
+    projectTitle: 'Whoopzee!',
+    projectImage: '/projects/',
+    description: [
+      'https://github.com/LocalNewsTV/whoopzee',
+    ],
+    tech: [
+      'React',
+      'TypeScript',
+      'Emotionjs',
+      'Node',
+      'Docker',
+    ],
+    repo: 'https://github.com/LocalNewsTV/whoopzee',
+    liveLink: 'https://localnewstv.github.io/whoopzee/',
+    moreInfo: '',
+  },
+  {
+    featured: false,
+    year: 2023,
     projectTitle: 'Portfolio v3.0',
     projectImage: '/projects/',
     description: [
