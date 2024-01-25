@@ -28,6 +28,8 @@ const About = () => {
     'MongoDB',
     'Node.js',
     'Progressive Web Applications',
+    'Django',
+    'Vue.js'
   ];
   return (
     <SmallSectionCont id="about" >
@@ -57,7 +59,7 @@ const About = () => {
             <BodyText>
               My main focus now is on continuing to grow my skillset through personal projects and
               gaining real-world experience. I'm passionate about full-stack development and excited
-              to embark on new challenges in the field."
+              to embark on new challenges in the field.
             </BodyText>
             <BodyText>Here is some of the technology I've been working with recently:</BodyText>
             <RecentSkills>

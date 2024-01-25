@@ -8,7 +8,7 @@ import JobExperience from "../types/JobExperience";
 const jobExperience: Array<JobExperience> = [
   {
     ref: 'GovSus',
-    place: "Province of BC",
+    place: "Province of BC, WLRS",
     position: "Full Stack Developer",
     link: "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/water-land-and-resource-stewardship",
     details: [

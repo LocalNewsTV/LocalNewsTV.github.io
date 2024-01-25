@@ -78,7 +78,7 @@ const projectsList: Array<Project> = [
       'OpenShift',
     ],
     repo: 'https://github.com/bcgov/citz-imb-wayfinder',
-    liveLink: 'https://wayfinder.apps.silver.devops.gov.bc.ca/',
+    liveLink: '',
     moreInfo: '',
   },
   {
