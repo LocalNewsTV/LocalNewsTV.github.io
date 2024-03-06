@@ -26,6 +26,23 @@ import Project from "./types/Project";
 const projectsList: Array<Project> = [
   {
     featured: false,
+    year: 2024,
+    projectTitle: 'aprs-fi-tracker',
+    projectImage: '/projects/',
+    description: [
+      'Application leveraging the arps.fi api to track if targets are actively moving or stationary',
+      'Users can define bounding boxes to alert them when a target is in a designated area'
+    ],
+    tech: [
+      'Python',
+      'Tkinter',
+    ],
+    repo: 'https://github.com/LocalNewsTV/aprs-tracker-app',
+    liveLink: '',
+    moreInfo: '',
+  },
+  {
+    featured: false,
     year: 2023,
     projectTitle: 'Whoopzee!',
     projectImage: '/projects/',

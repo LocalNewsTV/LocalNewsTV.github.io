@@ -9,7 +9,7 @@ const jobExperience: Array<JobExperience> = [
   {
     ref: 'GovSus',
     place: "Province of BC, WLRS",
-    position: "Full Stack Developer",
+    position: "Full Stack Web Developer",
     link: "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/water-land-and-resource-stewardship",
     details: [
       'Engaging with the Ministry of Water, Land, and Resource Stewardship to meet their specific needs',
@@ -24,7 +24,7 @@ const jobExperience: Array<JobExperience> = [
     end: "Present",
   },
   {
-    ref: "GovStu",
+    ref: "GovStudent",
     place: "Citizens' Services",
     position: "Capstone Student",
     link: "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/citizens-services",
@@ -38,7 +38,7 @@ const jobExperience: Array<JobExperience> = [
     end: "Aug 2023"
   },
   {
-    ref: 'CamStu',
+    ref: 'CamStudent',
     place: "Camosun College",
     position: "ICS Student (Diploma)",
     link: "https://camosun.ca/programs-courses/find-program/information-and-computer-systems-technologist-diploma",
