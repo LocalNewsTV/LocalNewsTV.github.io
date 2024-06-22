@@ -27,6 +27,42 @@ const projectsList: Array<Project> = [
   {
     featured: false,
     year: 2024,
+    projectTitle: 'corporate-bingo',
+    projectImage: '/projects/',
+    description: [
+      '\'Just for fun\' React application powered by Vite',
+    ],
+    tech: [
+      'React',
+      'TypeScript',
+      'Vite',
+    ],
+    repo: 'https://github.com/localnewstv/corporate-bingo/',
+    liveLink: 'https://localnewstv.github.io/corporate-bingo/',
+    moreInfo: '',
+  },
+  {
+    featured: false,
+    year: 2024,
+    projectTitle: 'aprs-stats-tracker',
+    projectImage: '/projects/',
+    description: [
+      'Simple tool showing analytics based on aprs-fi export data.',
+      'See info such as: Top speed, average time you drive, locations you visited'
+    ],
+    tech: [
+      'Vue',
+      'Vite',
+      'Vue-Leaflet',
+      'Docker'
+    ],
+    repo: 'https://github.com/LocalNewsTV/aprs-stats-tracker',
+    liveLink: 'https://localnewstv.github.io/aprs-stats-tracker/',
+    moreInfo: '',
+  },
+  {
+    featured: false,
+    year: 2024,
     projectTitle: 'aprs-fi-tracker',
     projectImage: '/projects/',
     description: [
@@ -69,7 +105,7 @@ const projectsList: Array<Project> = [
       '',
     ],
     tech: [
-      'VITE',
+      'Vite',
       'TypeScript',
       'Emotion'
     ],
@@ -161,7 +197,7 @@ const projectsList: Array<Project> = [
     year: 2023,
     projectTitle: 'Dollywood (Game)',
     projectImage: '/projects/',
-    description:  [
+    description: [
       "For my Graphics and Gaming Concepts class, I created a first-person shooter game using Unity. The game consists of multiple levels with increasing difficulty and includes four different weapons for the player to use. There are various pickups throughout the levels that can be collected to gain health or ammunition, as well as multiple enemy types with unique AI behaviors. I spent a lot of time tweaking the game mechanics to ensure a satisfying and engaging experience for the player.",
       "Overall, the project was a great way for me to put my Unity skills to the test and create a fully realized game from scratch using the skills taught in the course."
     ],
@@ -333,7 +369,7 @@ const projectsList: Array<Project> = [
     liveLink: 'https://localnewstv.github.io/BlackJack',
     moreInfo: '',
   },
-  
+
 ]
 
 export default projectsList;
