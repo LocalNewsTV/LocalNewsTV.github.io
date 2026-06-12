@@ -52,6 +52,7 @@ export const StyledData = styled.td`
   font-size: 12pt;
   text-wrap: wrap;
   padding-left: 0.5em;
+  &:nth-of-type(1){max-width: 10%;}
 `;
 
 export const StyledLink = styled(Link)`
@@ -63,13 +64,16 @@ export const StyledLink = styled(Link)`
 
 export const StyledTable = styled.table`
   margin: 3em 0;
+  width: 100%;
   border-collapse: collapse;
+  // table-layout: fixed;
 `;
 
 export const StyledTableHeader = styled.th`
   text-align: left;
   font-size: 18pt;
   padding-left: 0.5rem;
+  margin-left: auto;
 `;
 
 export const SubHeader = styled.p`
